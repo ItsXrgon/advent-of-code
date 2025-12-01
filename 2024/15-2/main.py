@@ -1,7 +1,7 @@
 # Dec 15 2024 - part 2
 
 
-file = open('15-2/input.txt')
+file = open('2024/15-2/input.txt')
 map = []
 moves = []
 result = 0

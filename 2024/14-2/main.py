@@ -4,7 +4,7 @@ import re
 from matplotlib import pyplot as plt
 import numpy as np
 
-file = open('14-2/input.txt')
+file = open('2024/14-2/input.txt')
 
 MAP_WIDTH = 101
 MAP_HEIGHT = 103

@@ -1,5 +1,5 @@
 # Dec 1 2024 - part 1 
-file = open('1-1/input.txt')
+file = open('2024/1-1/input.txt')
 
 list1 = []
 list2 = []

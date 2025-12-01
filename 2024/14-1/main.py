@@ -2,7 +2,7 @@
 import re
 
 
-file = open('14-1/input.txt')
+file = open('2024/14-1/input.txt')
 
 MAP_WIDTH = 101
 MAP_HEIGHT = 103

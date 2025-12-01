@@ -1,5 +1,5 @@
 # Dec 11 2024 - part 1
-file = open('11-1/input.txt')
+file = open('2024/11-1/input.txt')
 
 stones = [int(stone) for stone in file.read().strip().split(' ')]
 

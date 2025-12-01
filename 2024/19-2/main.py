@@ -3,7 +3,7 @@
 towels = []
 patterns = []
 possible_designs = 0
-with open('19-2/input.txt') as f:
+with open('2024/19-2/input.txt') as f:
     towels_input, patterns_input = f.read().split('\n\n')
     towels = towels_input.split(', ')
     

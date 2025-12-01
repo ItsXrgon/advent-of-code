@@ -9,7 +9,7 @@ reg_c = 0
 instructions = []
 out = ""
 
-with open('17-1/input.txt') as file:
+with open('2024/17-1/input.txt') as file:
     registers_input, instructions_input = file.read().split('\n\n')
     nums = [int(num.replace(': ', '')) for num in re.findall(f': {num_regex}', registers_input)]
     reg_a = nums[0]

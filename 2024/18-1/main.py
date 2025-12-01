@@ -4,7 +4,7 @@ from heapq import heappop, heappush
 from math import inf
 
 bytes = []
-with open('18-1/input.txt') as f:
+with open('2024/18-1/input.txt') as f:
     for byte in f:
         x, y = byte.split(',')
         bytes.append((int(x), int(y)))

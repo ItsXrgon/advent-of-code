@@ -4,7 +4,7 @@ from heapq import heappop, heappush
 from math import inf
 
 maze = []
-with open('16-1/input.txt') as f:
+with open('2024/16-1/input.txt') as f:
     x = 0
     for line in f:
         y = 0

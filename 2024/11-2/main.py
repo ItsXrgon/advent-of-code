@@ -1,7 +1,7 @@
 # Dec 11 2024 - part 2
 from collections import defaultdict
 
-file = open('11-2/input.txt')
+file = open('2024/11-2/input.txt')
 
 stones = [int(stone) for stone in file.read().strip().split(' ')]
 

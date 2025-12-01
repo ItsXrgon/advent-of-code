@@ -1,5 +1,5 @@
 # Dec 10 2024 - part 2
-file = open('10-2/input.txt')
+file = open('2024/10-2/input.txt')
 
 map = []
 trailheads = []

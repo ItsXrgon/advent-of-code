@@ -2,7 +2,7 @@
 import re
 
 
-file = open('13-2/input.txt')
+file = open('2024/13-2/input.txt')
 
 A_COST = 3
 B_COST = 1
