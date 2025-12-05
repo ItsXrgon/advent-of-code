@@ -1,7 +1,7 @@
 # Dec 04 2025 - part 2
 import time
 
-start = time.perf_counter()
+start_time = time.perf_counter()
 file = open('2025/04-2/input.txt', 'r')
 
 rolls = set()
@@ -43,5 +43,5 @@ while True:
     total_count += new_count 
 
 print(total_count)
-end = time.perf_counter()
-print(f"Took {end - start:.4f} seconds")
+end_time = time.perf_counter()
+print(f"Took {end_time - start_time:.4f} seconds")

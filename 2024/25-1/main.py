@@ -2,7 +2,7 @@
 
 locks = []
 keys = []
-with open('25-1/input.txt') as f:
+with open('2024/25-1/input.txt') as f:
     schematics = f.read().split('\n\n')
     for schema in schematics:
         rows = schema.split('\n')

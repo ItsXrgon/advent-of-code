@@ -5,7 +5,7 @@ from collections import defaultdict
 
 connections = defaultdict(list)
 
-with open('23-1/input.txt') as f:
+with open('2024/23-1/input.txt') as f:
     input_connections  = [connections.split('-') for connections in f.read().split('\n')]
     
 for connection in input_connections:

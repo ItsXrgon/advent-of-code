@@ -6,7 +6,7 @@ binary = []
 x_bin = []
 y_bin = []
 
-with open('24-2/input.txt') as f:
+with open('2024/24-2/input.txt') as f:
     starting_values, input_gates  = f.read().split('\n\n')
     
     for starting_value in starting_values.split('\n'):

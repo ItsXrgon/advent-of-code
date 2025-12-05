@@ -2,7 +2,7 @@
 
 from math import floor
 
-with open('22-1/input.txt') as f:
+with open('2024/22-1/input.txt') as f:
     numbers  = [int(num) for num in f.read().split('\n')]
 
 stage1_cache = dict()

@@ -1,7 +1,7 @@
 # Dec 20 2024 - part 1
 
 race = []
-with open('20-1/input.txt') as f:
+with open('2024/20-1/input.txt') as f:
     x = 0
     for line in f:
         y = 0

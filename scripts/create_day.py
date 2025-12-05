@@ -31,10 +31,10 @@ def make_folder(year_dir: str, day_str: str, part: int) -> bool:
         with open(main_path, "w", encoding="utf-8") as f:
             f.write(f"# Dec {day_str} 2025 - part {part}\n")
             f.write(f"import time\n\n")
-            f.write(f"start = time.perf_counter()\n\n")
+            f.write(f"start_time = time.perf_counter()\n\n")
             f.write(f"file = open('{year_dir}/{day_str}-{part}/input.txt', 'r')\n")
             f.write("\n\n\n\n\n\n\n")
-            f.write(f"end = time.perf_counter()\n")
+            f.write(f"end_time = time.perf_counter()\n")
             f.write("print(f\"Took {end - start:.4f} seconds\")")
 
 
