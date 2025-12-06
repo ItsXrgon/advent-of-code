@@ -35,7 +35,7 @@ def make_folder(year_dir: str, day_str: str, part: int) -> bool:
             f.write(f"file = open('{year_dir}/{day_str}-{part}/input.txt', 'r')\n")
             f.write("\n\n\n\n\n\n\n")
             f.write(f"end_time = time.perf_counter()\n")
-            f.write("print(f\"Took {end - start:.4f} seconds\")")
+            f.write("print(f\"Took {end_time - start_time:.4f} seconds\")")
 
 
     # create an empty input file if it doesn't exist
