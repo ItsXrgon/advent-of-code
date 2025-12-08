@@ -25,7 +25,7 @@ map_height = x
 def expand_beam(location: tuple):
     x, y = location
 
-    if x == map_height or y == map_height or y == -1:
+    if x == map_height:
         return 0
     
     next_location = (x + 1, y)
@@ -45,8 +45,7 @@ def expand_beam(location: tuple):
     
     return expand_beam(next_location)
 
-sx, sy = start
-print(1 + expand_beam((sx + 1, sy)))
+print(1 + expand_beam(start))
 
 end_time = time.perf_counter()
 print(f"Took {end_time - start_time:.4f} seconds")

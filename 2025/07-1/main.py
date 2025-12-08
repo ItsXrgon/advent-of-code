@@ -20,13 +20,12 @@ for line in file:
         y += 1
     x += 1
 
-map_width = y
 map_height = x
 
 def expand_beam(location: tuple):
     x, y = location
 
-    if x == map_height or y == map_height or y == -1:
+    if x == map_height:
         return 0
 
     if location in beam:
@@ -51,8 +50,7 @@ def expand_beam(location: tuple):
     
     return expand_beam(next_location)
 
-sx, sy = start
-print(expand_beam((sx + 1, sy)))
+print(expand_beam(start))
 
 end_time = time.perf_counter()
 print(f"Took {end_time - start_time:.4f} seconds")
