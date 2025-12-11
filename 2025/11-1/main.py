@@ -6,13 +6,9 @@ start_time = time.perf_counter()
 
 file = open('2025/11-1/input.txt', 'r')
 devices = {}
-start = ()
 for line in file:
     row = line.replace(':', '').strip().split(' ')
-    input = row[0]
-    outputs = set(row[1::])
-    
-    devices[input] = outputs
+    devices[row[0]] = set(row[1::])
 
 @cache
 def expand(input):
@@ -27,7 +23,6 @@ def expand(input):
     return paths
 
 print(expand('you'))
-
 
 
 end_time = time.perf_counter()

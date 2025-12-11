@@ -6,13 +6,9 @@ start_time = time.perf_counter()
 
 file = open('2025/11-2/input.txt', 'r')
 devices = {}
-start = ()
 for line in file:
     row = line.replace(':', '').strip().split(' ')
-    input = row[0]
-    outputs = set(row[1::])
-    
-    devices[input] = outputs
+    devices[row[0]] = set(row[1::])
 
 @cache
 def expand(input, dac: bool, ftt: bool):
@@ -26,8 +22,8 @@ def expand(input, dac: bool, ftt: bool):
         if output == 'out':
             if dac and ftt:
                 paths += 1
-            continue
-        paths += expand(output, dac, ftt)
+        else:
+            paths += expand(output, dac, ftt)
 
     return paths
 
