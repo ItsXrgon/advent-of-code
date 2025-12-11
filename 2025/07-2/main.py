@@ -1,4 +1,5 @@
 # Dec 07 2025 - part 2
+from functools import cache
 import time
 
 start_time = time.perf_counter()
@@ -7,7 +8,6 @@ file = open('2025/07-2/input.txt', 'r')
 
 start = None
 splitters = set()
-cache = {}
 x = 0
 for line in file:
     y = 0
@@ -22,6 +22,7 @@ for line in file:
 map_width = y
 map_height = x
 
+@cache
 def expand_beam(location: tuple):
     x, y = location
 
@@ -35,13 +36,7 @@ def expand_beam(location: tuple):
         left = (nx, ny+1)
         right = (nx, ny-1)
 
-        if left not in cache:
-            cache[left] =  expand_beam(left)
-
-        if right not in cache:
-            cache[right] = expand_beam(right)
-
-        return 1 + cache[left] + cache[right]
+        return 1 + expand_beam(left) + expand_beam(right)
     
     return expand_beam(next_location)
 
